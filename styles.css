@@ -1,0 +1,904 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f7fafc;
+    color:#444;
+    line-height:1.7;
+}
+
+/* NAVIGATION */
+header{
+    position:sticky;
+    top:0;
+    left:0;
+    width:100%;
+    background:#ffffff;
+    box-shadow:0 3px 10px rgba(0,0,0,.12);
+    z-index:1000;
+}
+
+nav{
+    width:90%;
+    max-width:1200px;
+    height:75px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:bold;
+    color:#1565c0;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#2e7d32;
+}
+
+.welcome{
+    margin-top:75px;
+    background:linear-gradient(135deg, #e3f2fd, #e8f5e9);
+    padding:70px 10% 80px;
+}
+
+.welcome-container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.welcome-text{
+    text-align:center;
+    max-width:900px;
+    margin:0 auto 50px;
+}
+
+.welcome-text h1{
+    font-size:42px;
+    color:#1565c0;
+    margin-bottom:25px;
+}
+
+.welcome-message{
+    font-size:20px;
+    line-height:1.8;
+    color:#444;
+}
+/* ENERGY INTRODUCTION */
+.energy-intro{
+    background:#ffffff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,.1);
+    margin-bottom:40px;
+}
+
+.energy-intro h2{
+    color:#2e7d32;
+    margin-bottom:30px;
+}
+
+/* LESSON DETAILS */
+.lesson-details{
+    display:grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+    gap:20px;
+}
+
+.detail-card{
+    background:#f5f9fc;
+    padding:25px 15px;
+    border-radius:12px;
+    text-align:center;
+    transition:.3s;
+}
+
+.detail-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.detail-card span{
+    font-size:35px;
+    display:block;
+    margin-bottom:10px;
+}
+
+.detail-card h3{
+    color:#1565c0;
+    margin:10px 0;
+}
+
+.detail-card p{
+    font-size:15px;
+    margin:0;
+}
+.learning-objectives{
+    background:#ffffff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,.1);
+}
+
+.learning-objectives h2{
+    color:#1565c0;
+    margin-bottom:20px;
+}
+
+.learning-objectives > p{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.learning-objectives ul{
+    list-style:none;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.learning-objectives li{
+    background:#e8f5e9;
+    padding:15px 20px;
+    border-radius:8px;
+    font-size:17px;
+    transition:.3s;
+}
+
+.learning-objectives li:hover{
+    background:#d0ebd2;
+    transform:translateX(5px);
+}
+
+/* SHARED SECTION STYLES */
+
+.about, .learn, .watch, .explore, .quiz, .contact{
+    padding:80px 10%;
+}
+
+.section-container{
+    max-width:1100px;
+    margin:auto;
+}
+
+h2{
+    font-size:38px;
+    color:#1565c0;
+    margin-bottom:25px;
+    text-align:center;
+}
+
+h3{
+    color:#2e7d32;
+    margin:20px 0;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+/* ABOUT THE LESSON */
+.about{
+    background:#f7fbff;
+    padding:80px 10%;
+    display:grid;
+    grid-template-columns:1fr 1.4fr;
+    gap:50px;
+    align-items:center;
+}
+
+/* Teacher image */
+.about-image{
+    text-align:center;
+}
+
+.about-image img{
+    width:100%;
+    max-width:400px;
+    height:500px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 6px 20px rgba(0,0,0,.15);
+}
+
+/* Teacher information */
+.about-text{
+    font-size:18px;
+}
+
+.about-text h2{
+    color:#1565c0;
+    text-align:left;
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.about-text h3{
+    color:#2e7d32;
+    margin-bottom:15px;
+}
+
+.about-text p{
+    margin-bottom:15px;
+    line-height:1.8;
+}
+
+
+/* Lesson information box */
+.lesson-information{
+    background:#ffffff;
+    padding:25px;
+    margin-top:25px;
+    border-radius:12px;
+    border-left:6px solid #1565c0;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.lesson-information h3{
+    color:#1565c0;
+    margin-bottom:18px;
+}
+
+.lesson-information p{
+    margin-bottom:8px;
+}
+
+
+/* What will we learn? */
+.what-learn{
+    grid-column:1 / -1;
+    background:#e8f5e9;
+    padding:30px;
+    margin-top:15px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.what-learn h2{
+    color:#2e7d32;
+    margin-bottom:15px;
+}
+
+.what-learn p{
+    max-width:850px;
+    margin:0 auto;
+    font-size:18px;
+    line-height:1.8;
+}
+/* LEARN SECTION*/
+.learn{
+    background:#ffffff;
+    padding:80px 10%;
+}
+
+.learn-intro{
+    max-width:800px;
+    margin:0 auto 30px;
+    text-align:center;
+    font-size:18px;
+    line-height:1.7;
+}
+
+/* PDF Viewer */
+.pdf-container{
+    width:100%;
+    max-width:1000px;
+    height:700px;
+    margin:30px auto 0;
+    background:#f1f1f1;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.pdf-container iframe{
+    width:100%;
+    height:100%;
+    border:none;
+}
+/* LEARN / WATCH / EXPLORE */
+
+.learn{
+    background:#ffffff;
+    text-align:center;
+}
+
+/* WATCH SECTION */
+.watch{
+    background:#eef7ff;
+    padding:80px 10%;
+    text-align:center;
+}
+
+.watch-intro{
+    max-width:800px;
+    margin:0 auto 35px;
+    font-size:18px;
+    line-height:1.7;
+}
+
+.video-container{
+    width:100%;
+    max-width:900px;
+    margin:0 auto;
+    position:relative;
+    aspect-ratio:16 / 9;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 6px 20px rgba(0,0,0,.2);
+    background:#000;
+}
+
+.video-container iframe{
+    width:100%;
+    height:100%;
+    border:none;
+}
+.explore{
+    background:#ffffff;
+    text-align:center;
+}
+
+/* ENERGY HEROES */
+.energy-heroes{
+    background:#fff8e1;
+    padding:80px 10%;
+    text-align:center;
+}
+
+.energy-heroes h2{
+    color:#e65100;
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.heroes-intro{
+    max-width:800px;
+    margin:0 auto 35px;
+    font-size:19px;
+    line-height:1.7;
+}
+
+.game-explanation{
+    max-width:800px;
+    margin:0 auto 40px;
+    background:#ffffff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.game-explanation h3{
+    color:#1565c0;
+    margin-bottom:15px;
+    font-size:25px;
+}
+
+.game-explanation p{
+    font-size:17px;
+    margin:0;
+}
+
+.points-section{
+    max-width:900px;
+    margin:auto;
+}
+
+.points-section h3{
+    color:#2e7d32;
+    font-size:28px;
+    margin-bottom:25px;
+}
+
+.table-container{
+    overflow-x:auto;
+    border-radius:12px;
+    box-shadow:0 5px 18px rgba(0,0,0,.12);
+}
+
+.points-table{
+    width:100%;
+    border-collapse:collapse;
+    background:#ffffff;
+    font-size:17px;
+}
+
+.points-table th{
+    background:#1565c0;
+    color:#ffffff;
+    padding:16px;
+    text-align:left;
+}
+
+.points-table td{
+    padding:16px;
+    border-bottom:1px solid #ddd;
+    text-align:left;
+}
+
+.points-table td:last-child,
+.points-table th:last-child{
+    text-align:center;
+    width:150px;
+}
+
+.points-table tbody tr:hover{
+    background:#f5f9fc;
+}
+
+.total-row{
+    background:#e8f5e9;
+    font-size:19px;
+}
+
+.total-row td{
+    border-bottom:none;
+    color:#1b5e20;
+}
+
+/* EXPLORE SECTION */
+.explore{
+    background:#ffffff;
+    padding:80px 10%;
+    text-align:center;
+}
+
+.explore h2{
+    color:#1565c0;
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.explore-intro{
+    max-width:800px;
+    margin:0 auto 50px;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* ACTIVITY CARDS*/ 
+.activity-card{
+    max-width:950px;
+    margin:0 auto 50px;
+    padding:35px;
+    background:#eef7ff;
+    border-radius:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,.12);
+}
+
+.activity-card h3{
+    color:#2e7d32;
+    font-size:27px;
+    margin-bottom:15px;
+}
+
+.activity-card p{
+    font-size:17px;
+    margin-bottom:25px;
+}
+/* WORDWALL ACTIVITIES */
+.wordwall-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.wordwall-container iframe{
+    width:500px;
+    max-width:100%;
+    height:380px;
+    border:none;
+    border-radius:10px;
+}
+
+/* PADLET ACTIVITY */
+.padlet-container{
+    width:100%;
+    border:1px solid rgba(0,0,0,0.1);
+    border-radius:10px;
+    overflow:hidden;
+    background:#f4f4f4;
+
+}
+
+.padlet-container iframe{
+    width:100%;
+    height:608px;
+    display:block;
+    border:none;
+}
+
+/* ENERGY COMMUNITY */
+.energy-community{
+    background:#f4fbff;
+    padding:80px 10%;
+    text-align:center;
+}
+
+.energy-community h2{
+    color:#1565c0;
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.community-intro{
+    font-size:22px;
+    font-weight:bold;
+    color:#2e7d32;
+    margin-bottom:10px;
+}
+
+.community-description{
+    max-width:750px;
+    margin:0 auto 40px;
+    font-size:18px;
+    line-height:1.7;
+}
+
+/* DISCUSSION QUESTION */
+.discussion-question{
+    max-width:800px;
+    margin:0 auto 45px;
+    padding:30px;
+    background:#fff8dc;
+    border-left:7px solid #ffb300;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.discussion-question h3{
+    color:#e65100;
+    font-size:26px;
+    margin-bottom:15px;
+}
+
+.discussion-question p{
+    font-size:20px;
+    font-weight:bold;
+    margin:0;
+}
+
+/* PADLET SECTION */
+
+.padlet-section{
+    max-width:1000px;
+    margin:0 auto 50px;
+}
+
+.padlet-section h3{
+    color:#1565c0;
+    font-size:25px;
+    margin-bottom:12px;
+}
+
+.padlet-section > p{
+    max-width:750px;
+    margin:0 auto 25px;
+    font-size:17px;
+    line-height:1.7;
+}
+
+/* Padlet container */
+.padlet-container{
+    width:100%;
+    border:1px solid rgba(0,0,0,0.1);
+    border-radius:12px;
+    overflow:hidden;
+    background:#f4f4f4;
+    box-shadow:0 6px 20px rgba(0,0,0,.12);
+}
+
+.padlet-container iframe{
+    width:100%;
+    height:608px;
+    display:block;
+    border:none;
+}
+
+/* BADGES SECTION */
+.badges{
+    background:#fffdf2;
+    padding:70px 10%;
+    text-align:center;
+}
+
+.badges h2{
+    color:#e65100;
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.badges-intro{
+    max-width:800px;
+    margin:0 auto 40px;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* BADGE CARDS */
+.badge-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    max-width:1000px;
+    margin:0 auto 40px;
+}
+
+.badge-card{
+    background:#ffffff;
+    padding:30px 20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.badge-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.badge-card img{
+    width:140px;
+    height:140px;
+    object-fit:contain;
+    margin-bottom:20px;
+}
+
+.badge-card h3{
+    color:#1565c0;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.badge-card p{
+    font-size:16px;
+    line-height:1.7;
+    margin:0;
+}
+
+/* JOURNEY BOX */
+.journey-box{
+    max-width:900px;
+    margin:0 auto;
+    padding:25px;
+    background:#e8f5e9;
+    border-left:7px solid #2e7d32;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.journey-box h3{
+    color:#2e7d32;
+    font-size:27px;
+    margin-bottom:12px;
+}
+
+.journey-box p{
+    font-size:18px;
+    margin:0;
+    line-height:1.8;
+}
+
+/* COMMUNITY RULES */
+.community-rules{
+    max-width:900px;
+    margin:0 auto;
+    padding:30px;
+    background:#ffffff;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.community-rules h3{
+    color:#2e7d32;
+    font-size:27px;
+    margin-bottom:25px;
+}
+
+.rules-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:15px;
+}
+
+.rule{
+    background:#eef7ff;
+    padding:20px 10px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.rule:hover{
+    transform:translateY(-5px);
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.rule span{
+    display:block;
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.rule p{
+    font-size:15px;
+    margin:0;
+}
+
+/* DISCUSSION BOARD */
+
+.discussion-board{
+    max-width:750px;
+    margin:50px auto 0;
+    padding:30px;
+    background:#ffffff;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 18px rgba(0,0,0,.12);
+    border-top:6px solid #ffb300;
+}
+
+.discussion-board h3{
+    color:#1565c0;
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.discussion-board p{
+    margin-bottom:25px;
+    font-size:17px;
+    color:#555;
+}
+
+.discussion-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#2e7d32;
+    color:white;
+    padding:15px 30px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.discussion-btn:hover{
+    background:#1b5e20;
+    transform:translateY(-3px);
+
+}
+/* CONTACT */
+.contact{
+    background:#ffffff;
+}
+
+.contact form{
+    max-width:700px;
+    margin:auto;
+}
+
+.contact input, .contact textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.contact textarea{
+    resize:vertical;
+    min-height:150px;
+
+}
+
+.contact button{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:15px;
+    width:220px;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact button:hover{
+    background:#1b5e20;
+}
+
+/* FOOTER */
+
+footer{
+    background:#1565c0;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width:900px){
+    .about{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+}
+
+@media (max-width:768px){
+    nav{
+        flex-direction:column;
+        height:auto;
+        padding:15px;
+    }
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+        margin-top:15px;
+    }
+    h2{
+      font-size:30px;
+    }
+    .quiz-btn{
+        width:100%;
+    }
+}
+
+@media (max-width:900px){
+
+    .lesson-details{
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+@media (max-width:768px){
+
+    .welcome{
+        padding:50px 6%;
+    }
+    .welcome-text h1{
+        font-size:32px;
+    }
+    .welcome-message{
+        font-size:17px;
+    }
+    .energy-intro,
+    .learning-objectives{
+        padding:25px;
+    }
+    .lesson-details{
+        grid-template-columns:1fr;
+    }
+    .learning-objectives ul{
+        grid-template-columns:1fr;
+    }
+}
