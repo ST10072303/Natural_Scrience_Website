@@ -28,7 +28,7 @@ header{
 
 nav{
     width:90%;
-    max-width:1200px;
+    max-width:1500px;
     height:75px;
     margin:auto;
     display:flex;
@@ -60,7 +60,6 @@ nav{
 }
 
 .welcome{
-    margin-top:75px;
     background:linear-gradient(135deg, #e3f2fd, #e8f5e9);
     padding:70px 10% 80px;
 }
@@ -104,8 +103,7 @@ nav{
 /* LESSON DETAILS */
 .lesson-details{
     display:grid;
-    grid-template-columns:
-        repeat(4, 1fr);
+    grid-template-columns:repeat(4, 1fr);
     gap:20px;
 }
 
@@ -175,7 +173,6 @@ nav{
 }
 
 /* SHARED SECTION STYLES */
-
 .about, .learn, .watch, .explore, .quiz, .contact{
     padding:80px 10%;
 }
@@ -199,6 +196,110 @@ h3{
 
 p{
     margin-bottom:15px;
+}
+
+/* THEORETICAL FRAMEWORK */
+.theoretical-framework{
+    background:#f4f8ff;
+    padding:80px 10%;
+}
+
+.framework-container{
+    max-width:1150px;
+    margin:0 auto;
+}
+
+.theoretical-framework h2{
+    text-align:center;
+    color:#1565c0;
+    font-size:36px;
+    margin-bottom:20px;
+}
+
+.framework-intro{
+    max-width:900px;
+    margin:0 auto 45px;
+    text-align:center;
+    font-size:18px;
+    line-height:1.8;
+    color:#444;
+}
+
+/* FRAMEWORK CARDS */
+.framework-grid{
+    display:grid;
+    grid-template-columns:repeat 1fr;
+    gap:25px;
+}
+
+.framework-card{
+    background:#ffffff;
+    padding:30px;
+    border-radius:15px;
+    border-top:5px solid #1565c0;
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.framework-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 9px 22px rgba(0,0,0,0.13);
+}
+
+/* Framework icons */
+.framework-icon{
+    width:60px;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#e3f2fd;
+    border-radius:50%;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+
+/* Framework headings */
+.framework-card h3{
+    color:#1565c0;
+    font-size:22px;
+    line-height:1.4;
+    margin-bottom:15px;
+}
+
+
+/* Framework descriptions */
+.framework-card p{
+    color:#444;
+    font-size:16px;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.framework-card p:last-child{
+    margin-bottom:0;
+}
+
+/* Community of Inquiry list */
+.framework-card ul{
+    padding-left:22px;
+    margin-top:15px;
+}
+
+.framework-card li{
+    color:#444;
+    font-size:15px;
+    line-height:1.8;
+    margin-bottom:12px;
+}
+
+.framework-card li:last-child{
+    margin-bottom:0;
+}
+
+.framework-card strong{
+    color:#2e7d32;
 }
 
 /* ABOUT THE LESSON */
@@ -267,7 +368,6 @@ p{
     margin-bottom:8px;
 }
 
-
 /* What will we learn? */
 .what-learn{
     grid-column:1 / -1;
@@ -307,7 +407,7 @@ p{
 /* PDF Viewer */
 .pdf-container{
     width:100%;
-    max-width:1000px;
+    max-width:1200px;
     height:700px;
     margin:30px auto 0;
     background:#f1f1f1;
@@ -511,7 +611,7 @@ p{
 }
 
 .wordwall-container iframe{
-    width:500px;
+    width:600px;
     max-width:100%;
     height:380px;
     border:none;
@@ -525,7 +625,6 @@ p{
     border-radius:10px;
     overflow:hidden;
     background:#f4f4f4;
-
 }
 
 .padlet-container iframe{
@@ -543,6 +642,7 @@ p{
 .ai-activity h3{
     color:#7b1fa2;
 }
+
 /* Introduction */
 .ai-introduction{
     max-width:750px;
@@ -557,6 +657,7 @@ p{
     font-size:22px;
     margin-bottom:10px;
 }
+
 /* AI steps */
 .ai-step{
     max-width:800px;
@@ -577,6 +678,7 @@ p{
 .ai-step p{
     margin-bottom:10px;
 }
+
 /* AI questions */
 .ai-question{
     background:#fff8dc;
@@ -591,6 +693,139 @@ p{
     font-style:italic;
     line-height:1.7;
 }
+
+/* ACTIVITY 5: ENERGY DETECTIVES */
+.investigation-activity{
+    background:#f0f8ff;
+    border-top:6px solid #1565c0;
+    text-align:left;
+}
+
+.investigation-activity > h3{
+    text-align:center;
+    color:#1565c0;
+    line-height:1.5;
+}
+
+/* Lesson details */
+.investigation-details{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px 25px;
+    padding:18px;
+    margin:25px 0;
+    background:#ffffff;
+    border-radius:10px;
+}
+
+.investigation-details p{
+    margin:0;
+    font-size:15px;
+}
+
+/* Learning objectives */
+.investigation-block{
+    padding:22px;
+    margin-bottom:25px;
+    background:#e8f5e9;
+    border-radius:10px;
+}
+
+.investigation-block h4{
+    color:#2e7d32;
+    font-size:21px;
+    margin-bottom:12px;
+}
+
+.investigation-block ul,
+.investigation-step ul,
+.investigation-step ol{
+    padding-left:25px;
+    margin-top:12px;
+}
+
+.investigation-block li, .investigation-step li{
+    margin-bottom:10px;
+    line-height:1.7;
+}
+
+/* Investigation steps */
+.investigation-step{
+    padding:24px;
+    margin-bottom:20px;
+    background:#ffffff;
+    border-radius:10px;
+    border-left:5px solid #42a5f5;
+    box-shadow:0 3px 10px rgba(0,0,0,.05);
+}
+
+.investigation-step h4{
+    color:#1565c0;
+    font-size:20px;
+    margin-bottom:14px;
+}
+
+.investigation-step p{
+    line-height:1.8;
+    margin-bottom:12px;
+}
+
+.investigation-step p:last-child{
+    margin-bottom:0;
+}
+
+
+/* Investigation table */
+.investigation-table-wrapper{
+    width:100%;
+    overflow-x:auto;
+    margin-top:20px;
+    border-radius:8px;
+}
+
+.investigation-table{
+    width:100%;
+    min-width:480px;
+    border-collapse:collapse;
+    background:#ffffff;
+    font-size:15px;
+}
+
+.investigation-table th{
+    background:#1565c0;
+    color:#ffffff;
+    padding:15px;
+    text-align:left;
+}
+
+.investigation-table td{
+    padding:15px;
+    border:1px solid #dbe5ee;
+    line-height:1.6;
+}
+
+.investigation-table tbody tr:nth-child(even){
+    background:#f1f7fc;
+}
+
+/* Mission reminder */
+.investigation-reminder{
+    padding:22px;
+    margin-top:25px;
+    background:#fff8dc;
+    border-left:6px solid #ffb300;
+    border-radius:10px;
+    text-align:center;
+}
+
+.investigation-reminder p{
+    margin:0;
+    line-height:1.8;
+    color:#754c00;
+}
+
+
 /* Feedback */
 .ai-feedback{
     max-width:800px;
@@ -656,7 +891,7 @@ p{
 
 /* DISCUSSION QUESTION */
 .discussion-question{
-    max-width:800px;
+    max-width:900px;
     margin:0 auto 45px;
     padding:30px;
     background:#fff8dc;
@@ -672,7 +907,7 @@ p{
 }
 
 .discussion-question p{
-    font-size:20px;
+    font-size:18px;
     font-weight:bold;
     margin:0;
 }
@@ -1039,5 +1274,61 @@ footer{
     }
     .learning-objectives ul{
         grid-template-columns:1fr;
+    }
+}
+
+/* FRAMEWORK RESPONSIVE DESIGN */
+@media (max-width:900px){
+    .framework-grid{
+        grid-template-columns:1fr;
+    }
+    .framework-card{
+        padding:25px;
+    }
+}
+
+@media (max-width:768px){
+    .theoretical-framework{
+        padding:60px 5%;
+    }
+
+    .theoretical-framework h2{
+        font-size:30px;
+    }
+
+    .framework-intro{
+        font-size:16px;
+        margin-bottom:30px;
+    }
+
+    .framework-card h3{
+        font-size:20px;
+    }
+
+    .framework-card p, .framework-card li{
+        font-size:15px;
+    }
+}
+/* Mobile adjustments */
+@media (max-width:768px){
+    .investigation-activity{
+        padding:25px 15px;
+    }
+
+    .investigation-details{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .investigation-step, .investigation-block{
+        padding:18px;
+    }
+    .investigation-activity > h3{
+        font-size:22px;
+    }
+    .investigation-step h4, .investigation-block h4{
+        font-size:18px;
+    }
+    .investigation-table th, .investigation-table td{
+        padding:10px;
     }
 }
