@@ -397,12 +397,37 @@ p{
 }
 
 .learn-intro{
-    max-width:800px;
-    margin:0 auto 30px;
+    max-width:1000px;
+    margin:0 auto 35px;
     text-align:center;
     font-size:18px;
     line-height:1.7;
 }
+
+/* Learn Section Instructions */
+.learning-instructions {
+    background-color: #eaf4ff;
+    border-left: 5px solid #1565c0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.learning-instructions h3 {
+    color: #1565c0;
+    margin-bottom: 12px;
+}
+
+.learning-instructions ol {
+    padding-left: 25px;
+    line-height: 1.8;
+}
+
+.learning-instructions li {
+    margin-bottom: 8px;
+}
+
 
 /* PDF Viewer */
 .pdf-container{
@@ -581,6 +606,34 @@ p{
     line-height:1.8;
 }
 
+/* Wordwall Matching Activity Rules */
+.matching-rules {
+    background-color: #fff8e1;
+    border-left: 5px solid #f9a825;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 90%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.matching-rules h3 {
+    color: #8d5700;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.matching-rules ol {
+    padding-left: 25px;
+    line-height: 1.8;
+}
+
+.matching-rules li {
+    margin-bottom: 8px;
+}
+
 /* ACTIVITY CARDS*/ 
 .activity-card{
     max-width:950px;
@@ -601,6 +654,7 @@ p{
     font-size:17px;
     margin-bottom:25px;
 }
+
 /* WORDWALL ACTIVITIES */
 .wordwall-container{
     width:100%;
@@ -1079,7 +1133,6 @@ p{
 }
 
 /* DISCUSSION BOARD */
-
 .discussion-board{
     max-width:750px;
     margin:50px auto 0;
@@ -1118,6 +1171,208 @@ p{
 .discussion-btn:hover{
     background:#1b5e20;
     transform:translateY(-3px);
+}
+
+
+/* ==============================
+   OER Learning Resources Section
+================================= */
+
+.oer-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.oer-section > h2 {
+    color: #1565c0;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.oer-introduction,
+.oer-topic-resources {
+    max-width: 850px;
+    margin: 0 auto 30px;
+    padding: 25px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.oer-introduction {
+    background-color: #eaf4ff;
+    border-top: 5px solid #1565c0;
+}
+
+.oer-introduction h3,
+.oer-topic-resources h3,
+.additional-oer-resources > h3 {
+    margin-bottom: 15px;
+}
+
+.oer-introduction h3 {
+    color: #1565c0;
+}
+
+.oer-introduction p,
+.oer-topic-resources > p,
+.additional-oer-resources > p {
+    line-height: 1.8;
+}
+
+.oer-topic-resources {
+    background-color: #f1f8e9;
+    border: 1px solid #c5e1a5;
+}
+
+.oer-topic-resources h3 {
+    color: #33691e;
+}
+
+.oer-featured-links {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 22px;
+}
+
+.oer-button {
+    display: inline-block;
+    max-width: 100%;
+    padding: 13px 22px;
+    background-color: #1565c0;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-sizing: border-box;
+}
+
+.oer-button:hover {
+    background-color: #0d47a1;
+    transform: translateY(-2px);
+}
+
+.secondary-oer-button {
+    background-color: #2e7d32;
+}
+
+.secondary-oer-button:hover {
+    background-color: #1b5e20;
+}
+
+/* Additional resources */
+
+.additional-oer-resources {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.additional-oer-resources > h3 {
+    color: #1565c0;
+}
+
+.additional-oer-resources > p {
+    max-width: 800px;
+    margin: 0 auto 25px;
+}
+
+.oer-resource-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.oer-resource-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border: 1px solid #d5e2f0;
+    border-top: 5px solid #1565c0;
+    border-radius: 10px;
+    padding: 22px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.oer-resource-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.oer-resource-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.oer-resource-card h4 {
+    color: #1565c0;
+    margin-bottom: 10px;
+}
+
+.oer-resource-card p {
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.oer-resource-link {
+    display: inline-block;
+    margin-top: auto;
+    padding: 10px 14px;
+    background-color: #e3f2fd;
+    color: #0d47a1;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.oer-resource-link:hover {
+    background-color: #bbdefb;
+    text-decoration: underline;
+}
+
+.oer-reminder {
+    max-width: 850px;
+    margin: 30px auto 0;
+    padding: 18px;
+    background-color: #fff8e1;
+    border-left: 5px solid #f9a825;
+    border-radius: 8px;
+    line-height: 1.7;
+    text-align: left;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .oer-section {
+        padding: 30px 12px;
+    }
+
+    .oer-introduction,
+    .oer-topic-resources {
+        padding: 18px;
+    }
+
+    .oer-resource-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .oer-featured-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .oer-button {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* ASSESSMENT AND REFLECTION */
@@ -1243,6 +1498,12 @@ footer{
     }
     .quiz-btn{
         width:100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .matching-rules {
+        padding: 15px;
     }
 }
 
